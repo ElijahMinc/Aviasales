@@ -151,7 +151,7 @@ const getLinkAviaSales = (data) => { // формируем ссылку на п�
    let link = 'https://www.aviasales.ru/search/'
    link += data.origin;
    const date = new Date(data.depart_date)
-   const day = date.getDay()
+   const day = date.getDate()
    link += day < 10 ? '0' + day : day
    const month = date.getMonth() + 1
    link += month < 10 ? '0' + month : month
